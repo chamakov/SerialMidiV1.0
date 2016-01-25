@@ -12,3 +12,13 @@ C:\Users\monse guillen\Documents\serialMidi\serialMidi\serialMidi\obj\Debug\Wind
 C:\Users\monse guillen\Documents\serialMidi\serialMidi\serialMidi\obj\Debug\serialMidi.csproj.GenerateResource.Cache
 C:\Users\monse guillen\Documents\serialMidi\serialMidi\serialMidi\obj\Debug\WindowsFormsApplication3.exe.manifest
 C:\Users\monse guillen\Documents\serialMidi\serialMidi\serialMidi\obj\Debug\WindowsFormsApplication3.application
+C:\Users\Juan\Documents\midiSerial\serialMidi\serialMidi\bin\Debug\WindowsFormsApplication3.exe.config
+C:\Users\Juan\Documents\midiSerial\serialMidi\serialMidi\obj\Debug\WindowsFormsApplication3.exe
+C:\Users\Juan\Documents\midiSerial\serialMidi\serialMidi\obj\Debug\WindowsFormsApplication3.pdb
+C:\Users\Juan\Documents\midiSerial\serialMidi\serialMidi\obj\Debug\serialMidi.csprojResolveAssemblyReference.cache
+C:\Users\Juan\Documents\midiSerial\serialMidi\serialMidi\obj\Debug\WindowsFormsApplication3.Form1.resources
+C:\Users\Juan\Documents\midiSerial\serialMidi\serialMidi\obj\Debug\WindowsFormsApplication3.Properties.Resources.resources
+C:\Users\Juan\Documents\midiSerial\serialMidi\serialMidi\obj\Debug\serialMidi.csproj.GenerateResource.Cache
+C:\Users\Juan\Documents\midiSerial\serialMidi\serialMidi\bin\Debug\WindowsFormsApplication3.exe
+C:\Users\Juan\Documents\midiSerial\serialMidi\serialMidi\bin\Debug\WindowsFormsApplication3.pdb
+C:\Users\Juan\Documents\midiSerial\serialMidi\serialMidi\bin\Debug\Midi.xml

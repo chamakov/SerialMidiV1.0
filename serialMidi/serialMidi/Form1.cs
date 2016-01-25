@@ -45,7 +45,7 @@ namespace WindowsFormsApplication3
             /*Seleccionamos los valores por defecto de los combo box*/
             seleccionBaudrate.SelectedIndex = 4;
             seleccionSerial.SelectedIndex = 0;
-            seleccionMidi.SelectedIndex = 1;
+            seleccionMidi.SelectedIndex = 0;
 
             /*Establecemos que el puerto reciba datos*/
             serialPort1.DataReceived += new SerialDataReceivedEventHandler(port_dataRecieved);
@@ -109,10 +109,13 @@ namespace WindowsFormsApplication3
                     conectado = true;
                     registroEventos.AppendText("Conectado\n");
                     registroEventos.ScrollToCaret();
+                    botonConectar.Enabled = false;
+                    botonDesconectar.Enabled = true;
                 }
                 catch (IOException ex)
                 {
-                    MessageBox.Show("Error en la conexión " + ex.Message);
+                    
+                    MessageBox.Show(("Error en la conexión " + ex.Message),"Error",MessageBoxButtons.OK,MessageBoxIcon.Error);
                     serialPort1.Close();
                     registroEventos.ScrollToCaret();
                 
@@ -131,6 +134,8 @@ namespace WindowsFormsApplication3
                     sendMidiMessage.closeMidiPort(seleccionMidi.SelectedIndex);
                     registroEventos.AppendText("Desconectado\n");
                     registroEventos.ScrollToCaret();
+                    botonConectar.Enabled = true;
+                    botonDesconectar.Enabled = false;
                 }
             }
         }
