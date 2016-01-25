@@ -40,6 +40,7 @@
             this.serialPort1 = new System.IO.Ports.SerialPort(this.components);
             this.etiquetaMidi = new System.Windows.Forms.Label();
             this.seleccionMidi = new System.Windows.Forms.ComboBox();
+            this.iconoNotificacion = new System.Windows.Forms.NotifyIcon(this.components);
             this.SuspendLayout();
             // 
             // botonConectar
@@ -124,6 +125,13 @@
             this.seleccionMidi.Size = new System.Drawing.Size(121, 21);
             this.seleccionMidi.TabIndex = 8;
             // 
+            // iconoNotificacion
+            // 
+            this.iconoNotificacion.Icon = ((System.Drawing.Icon)(resources.GetObject("iconoNotificacion.Icon")));
+            this.iconoNotificacion.Text = "Serial To Midi";
+            this.iconoNotificacion.Visible = true;
+            this.iconoNotificacion.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.notifyIcon1_MouseDoubleClick);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -143,6 +151,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Serial to Midi";
             this.Load += new System.EventHandler(this.Form1_Load);
+            this.SizeChanged += new System.EventHandler(this.Form1_SizeChanged);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -160,6 +169,7 @@
         private System.Windows.Forms.Label etiquetaMidi;
         public System.Windows.Forms.RichTextBox registroEventos;
         public System.Windows.Forms.ComboBox seleccionMidi;
+        private System.Windows.Forms.NotifyIcon iconoNotificacion;
     }
 }
 

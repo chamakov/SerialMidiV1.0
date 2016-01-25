@@ -150,5 +150,20 @@ namespace WindowsFormsApplication3
         {
 
         }
+
+        private void notifyIcon1_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
+            this.Show();
+            this.WindowState = FormWindowState.Normal;
+        }
+
+        private void Form1_SizeChanged(object sender, EventArgs e)
+        {
+            if (this.WindowState == FormWindowState.Minimized)
+            {
+                this.Hide();
+                iconoNotificacion.Visible = true;
+            }
+        }
     }
 }
