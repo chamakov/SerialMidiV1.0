@@ -43,7 +43,7 @@ namespace WindowsFormsApplication3
             }
 
             /*Seleccionamos los valores por defecto de los combo box*/
-            seleccionBaudrate.SelectedIndex = 4;
+            seleccionBaudrate.SelectedIndex = 10 ;
             seleccionSerial.SelectedIndex = 0;
             seleccionMidi.SelectedIndex = 0;
 
